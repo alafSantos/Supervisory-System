@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\components",
+    "\\src\\css",
+    "\\src\\i18n",
+    "\\src\\layouts",
+    "\\src\\pages",
+    "\\src\\pages\\modulos",
+    "\\src\\router",
+    "\\src\\store"
+  ],
+  "SelectedNode": "\\src\\pages\\Login.vue",
+  "PreviewInSolutionExplorer": false
+}

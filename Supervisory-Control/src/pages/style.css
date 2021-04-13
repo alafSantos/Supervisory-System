@@ -1,0 +1,81 @@
+/* Meu Primeiro Arquivo CSS */
+/*seletor
+{
+	propriedade: valor;
+	propriedade2: valor2;
+}*/
+
+/* TAGS */
+p
+{
+	color: yellow; /*pink;*/
+	font-size: 17px;
+	text-shadow: 2px 2px 2px #111111;
+	font-family: monospace;
+}
+
+body
+{
+	background-color: #000000; /*black;*/
+}
+
+*
+{
+	font-family: Helvetica; 
+	margin: 0;
+	padding: 0;
+}
+
+header
+{
+	background: #e92400; /*#35B8B0;*/
+	height: 100px;
+	padding: 10px; /*margem interna*/
+}
+
+footer
+{
+	/*clear: both; necessária devido ao uso da propriedade float*/
+	background-color: #e92400;
+	height: 30px;
+	text-align: center;
+	padding: 10px 0px 0px 5px;
+}
+
+h1
+{
+	color: #92f3ff;
+	text-shadow: 2px 2px 2px #111111;
+	text-align: center;
+	font-size: 50px;
+}
+
+/* IDs */
+#div_principal
+{
+	background-image: url("miranha.jpg");
+	background-size: 100%;
+	min-height: 600px;
+	width: 100%;
+	padding: 100 0 0 0;
+	/*float: left;*/
+}
+
+#imgLogo
+{
+	width: 20%;
+}
+
+/* Class */
+.container
+{
+	width: 960px;
+	margin: auto;
+}
+
+.efeito
+{
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 60px 0 60px 0;
+	
+}
