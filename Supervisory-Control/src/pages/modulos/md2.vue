@@ -124,10 +124,10 @@
       handleData() {
         async function getData() {
           let valuesJSON = [];
-          const json_url = 'https://cors-anywhere.herokuapp.com/http://7345653d8e71.ngrok.io; //https://api.jsonbin.io/b/5ee79d3c0e966a7aa369f1f5';//'file:///home/alaf/md1.html'; //'http://192.168.0.105:8081/';
+          const json_url = 'https://api.jsonbin.io/b/60787ffc0ed6f819beacec78';
           const response = await fetch(json_url);
           const datajson = await response.json();
-          valuesJSON = [datajson.TempDHT22, datajson.UmidDHT22, datajson.pir];
+          valuesJSON = [datajson.TEMPERATURA, datajson.UMIDADE];
           return valuesJSON;
         }
         let jsonV = getData();

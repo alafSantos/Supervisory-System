@@ -129,10 +129,10 @@ export default {
     handleData() {
           async function getData() {
           let valuesJSON = [];
-          const json_url = 'https://cors-anywhere.herokuapp.com/http://7345653d8e71.ngrok.io; //https://api.jsonbin.io/b/5ee79d3c0e966a7aa369f1f5';//'file:///home/alaf/md1.html'; //'http://192.168.0.105:8081/';
+          const json_url = 'http://192.168.0.203:10050/'; //usar uma api pra evitar problemas com CORS ? //https://cors-anywhere.herokuapp.com/
           const response = await fetch(json_url);
           const datajson = await response.json();
-          valuesJSON = [datajson.TempDHT22, datajson.UmidDHT22, datajson.pir];
+          valuesJSON = [datajson.TEMPERATURA, datajson.UMIDADE];
           return valuesJSON;
         }
           let jsonV = getData();
@@ -145,8 +145,8 @@ export default {
             //alert(message);
              this.temperatura = jsonV[0];
              this.umidade = jsonV[1];
-            if (this.temperatura > 60) this.erro = 1; //pensar nos casos criticos de temperatura e umidade, dai substituir nos ifs
-            else if (this.umidade > 40) this.erro = 2;
+            if (this.temperatura > 90) this.erro = 1; //pensar nos casos criticos de temperatura e umidade, dai substituir nos ifs
+            else if (this.umidade > 80) this.erro = 2;
             else this.erro = 4;
           });
       },
